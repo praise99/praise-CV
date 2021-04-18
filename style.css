@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.flex {
+  display: flex;
+}
+.container {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+}
+.info {
+  width: 35%;
+  background-color: rgb(230, 210, 199);
+  /* height: fit-content; */
+  font-weight: 400;
+  padding-top: 3rem;
+}
+.description {
+  width: 65%;
+}
+.center {
+  text-align: center;
+}
+.flex-center {
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.phone img {
+  width: 3rem;
+}
+a {
+  text-decoration: none;
+}
+button {
+  padding: 1rem 0rem;
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+  margin: 2rem 0rem;
+  width: 20rem;
+}
+.phone a {
+  margin: 1rem 0rem;
+  color: #000000;
+  font-size: 2rem;
+}
+.school {
+  font-size: 3rem;
+}
+.education2 {
+  font-size: 2rem;
+}
+.info {
+  text-align: center;
+}
+ul li {
+  font-size: 2rem;
+  padding: 1rem 0rem;
+  text-align: left;
+  margin-left: 2rem;
+}
+.find-me,
+.education,
+.skills {
+  padding-bottom: 2rem;
+}
+.heading-title {
+  font-size: 4rem;
+  font-style: italic;
+  font-family: 800;
+}
+.description {
+  width: 65%;
+  padding: 3rem;
+}
+.who {
+  width: 30rem !important;
+}
+.profile {
+  padding: 2rem 0rem;
+}
+.profile-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.line {
+  width: auto;
+  border: 0.2px solid #000000;
+}
+.profile-desc {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.profile-job {
+  padding: 1rem 0rem;
+}
+.job-title {
+  font-size: 1.5rem;
+}
+.ul {
+  padding-top: 2rem;
+}
+.ul li {
+  margin-left: 5rem;
+}
+.second-job {
+  margin-top: 2rem;
+}
+.project-topic2 {
+  margin-top: 2rem;
+}
+.live-link,
+.github-link {
+  padding: 2rem 0rem;
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.github-link {
+  margin-top: 2rem;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 480.98px) {
+  .logo {
+    width: 100%;
+  }
+  .info {
+    width: 45%;
+  }
+  .description {
+    width: 55%;
+    padding: 1rem;
+  }
+  html {
+    font-size: 7px;
+  }
+  .who {
+    width: 25rem !important;
+  }
+  .education2 {
+    font-size: 1.6rem;
+  }
+  .phone a {
+    font-size: 1.4rem;
+  }
+  .heading-title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767.98px) {
+  .education2 {
+    font-size: 1.6rem;
+  }
+  .phone a {
+    font-size: 1.4rem;
+  }
+  button {
+    width: 18rem;
+  }
+  html {
+    font-size: 8px;
+  }
+  .description {
+    padding: 2rem;
+  }
+  .info {
+    padding: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+}
