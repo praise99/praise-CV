@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("./fonts/AvenirLTStd-Black.eot");
+  src: url("./fonts/AvenirLTStd-Black.eot?#iefix") format("embedded-opentype"),
+    url("./fonts.AvenirLTStd-Black.woff2") format("woff2"),
+    url("./fontsAvenirLTStd-Black.woff") format("woff"),
+    url("./fontsAvenirLTStd-Black.ttf") format("truetype"),
+    url("./fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   font-size: 10px;
 }
@@ -11,18 +23,34 @@ html {
 }
 .container {
   display: flex;
-  font-family: "Poppins", sans-serif;
+  font-family: "Avenir", sans-serif;
   height: auto;
+  background-color: #2c2f34;
+}
+h2,
+h1 {
+  font-family: Helvetica, sans-serif;
 }
 .info {
   width: 35%;
-  background-color: rgb(230, 210, 199);
-  /* height: fit-content; */
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#7ed56f),
+    to(#28b485)
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    #7ed56f,
+    #28b485
+  ); /* height: fit-content; */
   font-weight: 400;
   padding-top: 3rem;
 }
 .description {
   width: 65%;
+  color: #767f75;
 }
 .center {
   text-align: center;
@@ -42,8 +70,9 @@ a {
 button {
   padding: 1rem 0rem;
   background-color: transparent;
-  color: #000000;
-  border: 2px solid #000000;
+  color: #2c2f34;
+  border: 2px solid #2c2c2c;
+
   margin: 2rem 0rem;
   width: 20rem;
 }
@@ -76,6 +105,28 @@ ul li {
   font-size: 4rem;
   font-style: italic;
   font-family: 800;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7ed56f),
+    to(#28b485)
+  );
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+h2 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7ed56f),
+    to(#28b485)
+  );
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .description {
   width: 65%;
@@ -83,6 +134,8 @@ ul li {
 }
 .who {
   width: 30rem !important;
+  border: 3px solid #7ed56f;
+  color: #ffffff;
 }
 .profile {
   padding: 2rem 0rem;
@@ -92,8 +145,18 @@ ul li {
   font-weight: bold;
 }
 .line {
+  margin-top: 1rem;
   width: auto;
-  border: 0.2px solid #000000;
+  border: 0.2px solid #7ed56f;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7ed56f),
+    to(#28b485)
+  );
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
 }
 .profile-desc {
   font-size: 2rem;
@@ -104,6 +167,7 @@ ul li {
 }
 .job-title {
   font-size: 1.5rem;
+  color: #ffffff;
 }
 .ul {
   padding-top: 2rem;
@@ -115,28 +179,45 @@ ul li {
   margin-top: 2rem;
 }
 .project-topic2 {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
+.project-topic2 div {
+  margin-top: 1.5rem;
+}
+.logotop {
+  padding-bottom: 2rem;
+}
+
 .live-link,
 .github-link {
-  padding: 2rem 0rem;
+  /* padding: 2rem 0rem; */
   font-size: 1.5rem;
   margin: 1rem 0rem;
   color: #000000;
   text-decoration: underline;
 }
-
-.github-link {
-  margin-top: 2rem;
-}
-button:hover {
-  background-color: black;
+.live-link:hover,
+.github-link:hover {
   color: white;
 }
+.info div {
+  margin-top: 2rem;
+}
+
+.github-link {
+  margin-top: 5rem;
+}
+/* button:hover {
+  background-color: black;
+  color: white;
+} */
 
 @media (max-width: 480.98px) {
+  .logo33 {
+    width: 90%;
+  }
   .logo {
-    width: 100%;
+    width: 80%;
   }
   .info {
     width: 45%;
@@ -149,16 +230,20 @@ button:hover {
     font-size: 7px;
   }
   .who {
-    width: 25rem !important;
+    width: 100% !important;
+    font-size: 1.6rem;
   }
   .education2 {
     font-size: 1.6rem;
   }
   .phone a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .heading-title {
     font-size: 2.5rem;
+  }
+  button {
+    width: 90%;
   }
 }
 @media (min-width: 481px) and (max-width: 767.98px) {
@@ -180,6 +265,9 @@ button:hover {
   .info {
     padding: 2rem;
   }
+  .logo {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023.98px) {
   html {
@@ -187,4 +275,7 @@ button:hover {
   }
 }
 @media (min-width: 1024px) and (max-width: 1199.98px) {
+  .heading-title {
+    font-size: 3.7rem;
+  }
 }
